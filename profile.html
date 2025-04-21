@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="profile-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <form action="javascript:" class="profile-form">
+
+      <h1>Profile</h1>
+
+      <img src="images/profile-photo.png" alt="Profile Photo" class="profile-photo">
+
+      <label for="profile-photo" class="profile-photo-label">
+        <input type="file" hidden>
+        <input type="text" placeholder="Upload photo" id="input-locked"> <br>
+        <span>Up to 1 MB (300x300 px)</span>
+        <img src="images/icons/photo.svg" class="photo-icon" alt="photo">
+      </label>
+
+      <button class="thrash-button"> <img src="images/icons/thrash.svg" alt="thrash"></button>
+
+      <label for="name" class="name">Name
+        <input type="text" name="name" id="name">
+      </label>
+
+      <label for="email" class="email">E-mail
+        <input type="text" name="email" id="email">
+      </label>
+
+      <label class="country">Country
+        <select name="country" id="country" class="country-select" required>
+          <option value="country1" hidden selected disabled>Select</option>
+          <option value="country2">USA</option>
+          <option value="country3">Canada</option>
+          <option value="country4">Mexico</option>
+          <option value="country5">Germany</option>
+          <option value="country6">France</option>
+          <option value="country7">Ukraine</option>
+          <option value="country8">Poland</option>
+          <option value="country9">Italy</option>
+          <option value="country10">Spain</option>
+        </select>
+      </label>
+
+      <label for="city" class="city">City
+        <input type="text" name="city" id="city">
+      </label>
+
+      <label for="zip-code" class="zip-code">Zip Code
+        <input type="text" name="zip-code" id="zip-code">
+      </label>
+
+      <label for="phone-number" class="phone-number">Phone Number
+        <input type="text" name="phone-number" id="phone-number">
+      </label>
+
+      <button class="update-button">Update</button>
+
+    </form>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+:root {
+  --font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f7f7f7;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 570px;
+  height: 590px;
+  border-radius: 6px;
+  gap: 10px;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: auto 1fr 50%;
+  background-color: #fff;
+  font-family: var(--font-family);
+
+  h1 {
+    margin: 0;
+    grid-column: span 3;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+  }
+
+  input:not(#input-locked),
+  select {
+    padding: 10px;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+  }
+
+  #input-locked {
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  span {
+    display: inline-block;
+    font-size: 12px;
+    color: #969696;
+  }
+
+  input:focus,
+  select:focus {
+    outline: none;
+    border: 1px solid #007bff;
+  }
+
+  input:hover,
+  select:hover {
+    outline: none;
+    border: 1px solid #007bff;
+  }
+
+  .profile-photo {
+    grid-column: span 1;
+    border-radius: 50%;
+    width: 80px;
+    aspect-ratio: 1;
+  }
+
+  .profile-photo-label {
+    align-content: start;
+    position: relative;
+  }
+
+  label {
+    display: grid;
+    align-content: center;
+  }
+
+  [type="file"]+input {
+    pointer-events: none;
+  }
+
+  .photo-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .thrash-button {
+    place-self: start;
+    border: 1px solid #E4E4E4;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .update-button {
+    grid-column: span 3;
+    place-self: start;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  }
+
+  .name,
+  .country,
+  .zip-code {
+    grid-column: span 2;
+  }
+}

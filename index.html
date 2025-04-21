@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create an account</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <form action="javascript:" class="reg-form">
+
+      <h1>Create an Account</h1>
+
+      <label class="first-name">First name
+        <input type="text" id="first-name" name="first-name" class="first-name-input" required>
+      </label>
+
+      <label class="last-name">Last Name
+        <input type="text" id="last-name" name="last-name" class="last-name-input" required>
+      </label>
+
+      <label class="email" required>E-mail
+        <input type="email" id="email" name="email" class="email-input" required>
+      </label>
+
+      <p class="info">We'll never share your email with anyone else.</p>
+
+      <label class="radio-m" required>
+        <input type="radio" name="radio" id="radio-male" required>
+        <span>Male</span>
+      </label>
+
+      <label class="radio" required>
+        <input type="radio" name="radio" id="radio-female">
+        <span>Female</span>
+      </label>
+
+      <label class="country">Country
+        <select name="country" id="country" class="country-select" required>
+          <option value="country1" hidden selected disabled>Select</option>
+          <option value="country2">USA</option>
+          <option value="country3">Canada</option>
+          <option value="country4">Mexico</option>
+          <option value="country5">Germany</option>
+          <option value="country6">France</option>
+          <option value="country7">Ukraine</option>
+          <option value="country8">Poland</option>
+          <option value="country9">Italy</option>
+          <option value="country10">Spain</option>
+        </select>
+      </label>
+
+      <label class="city">City
+        <input type="text" id="city" name="city" class="city-input" required>
+      </label>
+
+      <button type="submit" class="sign-up">Sign Up</button>
+
+      <p class="terms">
+        By clicking the 'Sign Up' button, you confirm that you accept our .
+        <a href="/">Terms of Use</a> and <a href="/">Privacy Policy</a>
+      </p>
+
+      <hr>
+
+      <footer>
+        <p>Have an account? <a href="profile.html" class="log-in">Log In</a></p>
+      </footer>
+
+    </form>
+  </main>
+
+</body>
+
+</html>
